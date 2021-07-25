@@ -1,9 +1,8 @@
 package dev.alexengrig.socment.youtube.service;
 
 import dev.alexengrig.socment.youtube.model.Comment;
-
-import java.util.List;
+import reactor.core.publisher.Flux;
 
 public interface CommentService {
-    List<Comment> getAllByVideoId(String videoId);
+    Flux<Comment> getAllByVideoId(String videoId);
 }

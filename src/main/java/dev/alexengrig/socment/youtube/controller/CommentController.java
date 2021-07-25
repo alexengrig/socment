@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
+import reactor.core.publisher.Flux;
 
 @RestController
 @RequiredArgsConstructor
@@ -18,7 +17,7 @@ public class CommentController {
     private final CommentService commentService;
 
     @GetMapping("/videos/{videoId}")
-    public ResponseEntity<List<Comment>> all(@PathVariable String videoId) {
+    public ResponseEntity<Flux<Comment>> all(@PathVariable String videoId) {
         return ResponseEntity.ok(commentService.getAllByVideoId(videoId));
     }
 }

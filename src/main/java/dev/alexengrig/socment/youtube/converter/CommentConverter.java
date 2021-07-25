@@ -4,11 +4,13 @@ import com.google.api.services.youtube.model.CommentSnippet;
 import com.google.api.services.youtube.model.CommentThread;
 import dev.alexengrig.socment.youtube.model.Comment;
 import org.springframework.core.convert.converter.Converter;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 
 @Component
 public class CommentConverter implements Converter<CommentThread, Comment> {
 
+    @NonNull
     @Override
     public Comment convert(CommentThread source) {
         CommentSnippet snippet = source.getSnippet().getTopLevelComment().getSnippet();
