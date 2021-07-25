@@ -1,0 +1,5 @@
+server:
+  port: 8338
+youtube:
+  api:
+    key: here_your_key
