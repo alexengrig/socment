@@ -1,13 +1,13 @@
-package dev.alexengrig.socment;
+package dev.alexengrig.socment.youtube;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SocmentApplication {
+public class SocmentYouTubeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SocmentApplication.class, args);
+        SpringApplication.run(SocmentYouTubeApplication.class, args);
     }
 
 }
