@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package dev.alexengrig.socoment.youtube;
+package dev.alexengrig.socoment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SocomentYouTubeApplicationTests {
+class SocomentApplicationTests {
 
     @Test
     void contextLoads() {

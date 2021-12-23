@@ -38,7 +38,7 @@ public class YouTubeCommentServiceImpl implements YouTubeCommentService {
     private final YouTubeCommentConverter commentConverter;
 
     @Value("${youtube.api.key}")
-    private final String youTubeApiKey;
+    private final String apiKey;
 
     @Override
     @SneakyThrows(IOException.class)
@@ -46,7 +46,7 @@ public class YouTubeCommentServiceImpl implements YouTubeCommentService {
         CommentThreadListResponse response = youTube
                 .commentThreads()
                 .list("snippet")
-                .setKey(youTubeApiKey)
+                .setKey(apiKey)
                 .setVideoId(videoId)
                 .execute();
         List<CommentThread> items = response.getItems();

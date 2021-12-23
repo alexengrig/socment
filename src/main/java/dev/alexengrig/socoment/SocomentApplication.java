@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package dev.alexengrig.socoment.youtube;
+package dev.alexengrig.socoment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SocomentYouTubeApplication {
+public class SocomentApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SocomentYouTubeApplication.class, args);
+        SpringApplication.run(SocomentApplication.class, args);
     }
 
 }

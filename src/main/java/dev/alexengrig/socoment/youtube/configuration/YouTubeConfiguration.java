@@ -34,7 +34,7 @@ import java.security.GeneralSecurityException;
 @RequiredArgsConstructor
 public class YouTubeConfiguration {
 
-    @Value("${spring.application.name}")
+    @Value("${youtube.application.name}")
     private final String applicationName;
 
     @Bean
