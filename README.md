@@ -1,3 +1,3 @@
-# Socment
+# Socoment
 
-Socment (social comment) is a project to work with social networks comments.
+Socoment (social comment) is a project to work with comments on social networks.

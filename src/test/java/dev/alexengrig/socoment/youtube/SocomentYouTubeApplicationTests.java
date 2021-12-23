@@ -14,4 +14,16 @@
  * limitations under the License.
  */
 
-rootProject.name = 'socoment'
+package dev.alexengrig.socoment.youtube;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SocomentYouTubeApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}

@@ -14,4 +14,16 @@
  * limitations under the License.
  */
 
-rootProject.name = 'socoment'
+package dev.alexengrig.socoment.youtube;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SocomentYouTubeApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SocomentYouTubeApplication.class, args);
+    }
+
+}

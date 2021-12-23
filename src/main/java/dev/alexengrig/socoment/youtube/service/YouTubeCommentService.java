@@ -14,4 +14,14 @@
  * limitations under the License.
  */
 
-rootProject.name = 'socoment'
+package dev.alexengrig.socoment.youtube.service;
+
+import dev.alexengrig.socoment.youtube.model.Comment;
+
+import java.util.List;
+
+public interface YouTubeCommentService {
+
+    List<Comment> getAllByVideoId(String videoId);
+
+}
